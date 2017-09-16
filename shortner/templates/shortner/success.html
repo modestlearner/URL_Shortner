@@ -1,0 +1,9 @@
+{% extends 'shortner/base.html' %}
+
+
+{% block content %}
+<h1>Created</h1>
+<p>{{ object.url }}</p>
+<p><a href="{{object.get_short_url }}" class="btn-primary btn-link">{{object.get_short_url }}</a></p>
+<a href="{% url 'home' %}" class="btn btn-success">New</a>
+{% endblock %}

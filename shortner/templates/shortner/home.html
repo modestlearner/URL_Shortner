@@ -1,0 +1,23 @@
+{% extends 'shortner/base.html' %}
+
+{% block content %}
+                <h1 class="cover-heading">{{ title }}</h1>
+            <p class="lead">Shorten that URL
+                        <table class="table table-condensed">
+
+            <form method="post" action="">
+                {% csrf_token %}
+        {#      <input name = 'url' type="text" placeholder="Shorten Url" />#}
+                {% for fileds in form %}
+                    {{ fileds.errors }}
+                    <tr class="col-sm-10">{{ fileds }}</tr>
+                    <br>
+                {% endfor %}
+
+
+                <input class="btn btn-primary" type = 'submit' value="Shorten &raquo;" />
+            </form>
+            </table>
+            </p>
+
+{%  endblock %}
