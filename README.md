@@ -25,6 +25,7 @@ The thing which makes it superior to bitly is that it gives you option to custom
 
 4.After going in the root directory type
  ```shell
+    python manage.py migrate
     python manage.py runserver
  ```
 
