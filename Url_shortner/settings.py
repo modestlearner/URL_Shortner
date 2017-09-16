@@ -25,7 +25,7 @@ SECRET_KEY = '5-738m3956@^7o1cq3xrb@(*+aig$+on$fkztnw&1gyf0&6%24'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["www.hj.ml" , "hj.ml",'0.0.0.0']
+ALLOWED_HOSTS = ["www.hj.ml" , "hj.ml",'0.0.0.0','127.0.0.1']
 
 
 # Application definition
