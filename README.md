@@ -14,7 +14,7 @@ The thing which makes it superior to bitly is that it gives you option to custom
 2.Create a python virtual environment and install python dependencies.
 
 ```shell
-    cd Url_Shortner
+    cd URL_Shortner
     virtualenv venv
     source venv/bin/activate  # run this command everytime before working on project
     pip install -r requirements.txt
