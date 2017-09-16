@@ -29,4 +29,4 @@ The thing which makes it superior to bitly is that it gives you option to custom
  ```
 
 
-5.That's it. Now you can run development server at [http://hj.ml:8000] (for serving backend)
+5.That's it. Now you can run development server at [http://127.0.0.1:8000/] (for serving backend)
