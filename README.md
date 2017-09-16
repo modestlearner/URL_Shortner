@@ -20,4 +20,13 @@ The thing which makes it superior to bitly is that it gives you option to custom
     pip install -r requirements.txt
 ```
 
-3.That's it. Now you can run development server at [http://hj.ml:8000] (for serving backend)
+3.Now go to the root directory where you'll see **manage.py** file
+
+
+4.After going in the root directory type
+ ```shell
+    python manage.py runserver
+ ```
+
+
+5.That's it. Now you can run development server at [http://hj.ml:8000] (for serving backend)
