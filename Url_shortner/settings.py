@@ -57,8 +57,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Url_shortner.urls'
 ROOT_HOSTCONF = 'Url_shortner.hosts'
 DEFAULT_HOST = "www"
-DEFAULT_REDIRECT_URL = "http://www.hj.ml:5000/"
-PARENT_HOST = 'hj.ml:5000/'
+DEFAULT_REDIRECT_URL = "http://www.hj.ml:8000/"
+PARENT_HOST = 'hj.ml:8000/'
 
 TEMPLATES = [
     {
