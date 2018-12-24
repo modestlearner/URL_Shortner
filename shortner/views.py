@@ -15,7 +15,7 @@ class Home(View):
     def get(self,request,*args,**kwargs):
         form=self.form_class(None)
         context = {
-            "title":"hj.ml",
+            "title":"localhost",
             "form": form,
         }
         return render(request, 'shortner/home.html',context )
@@ -25,7 +25,7 @@ class Home(View):
         print(request.POST)
         print(request.POST)
         context = {
-            "title": "hj.ml",
+            "title": "localhost",
             "form": form
         }
         template = 'shortner/home.html'
@@ -58,9 +58,11 @@ class UrlRedirectView(View):
         #     obj = URL.objects.all().first()
         # obj = get_object_or_404(URL, shortcode=shortcode)
         qs = URL.objects.filter(shortcode__iexact=shortcode)
+        print(qs)
         if qs.count()!=1 and qs.exists():
             raise Http404
         obj = qs.first()
+        print(obj)
         print(ClickEvent.objects.create_event(obj))
         return HttpResponseRedirect(obj.url)
 
